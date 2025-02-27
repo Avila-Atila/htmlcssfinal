@@ -227,8 +227,14 @@ main {
   align-self: flex-start;
 }
 
+.section__lancamento__comparar__tabela {
+  background-color: white;
+  border: none;
+}
+
 .section__lancamento__comparar__tabela:hover {
   transform: scale(1.3);
+  cursor: pointer;
 }
 
 #section__lancamento__comparar__form {
@@ -277,6 +283,7 @@ main {
   max-height: 184px;
   padding-top: 50px;
 }
+
 .section__contato__form {
   display: flex;
   flex: 1;
