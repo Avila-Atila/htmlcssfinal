@@ -239,6 +239,21 @@ main {
   cursor: pointer;
 }
 
+.section__lancamento__comparar__div__menu__tabela {
+  width: 100%;
+  th,
+  td {
+    border: 1px solid black;
+  }
+}
+
+.section__lancamento__comparar__div__menu {
+  width: 30%;
+  height: 30%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
 #section__lancamento__comparar__form {
   display: flex;
   flex-wrap: wrap;
