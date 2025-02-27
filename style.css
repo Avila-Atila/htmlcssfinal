@@ -215,6 +215,10 @@ main {
   width: 100%;
 }
 
+.section__lancamento__comparar__produto__div__info {
+  display: flex;
+}
+
 .section__lancamento__comparar__div__imagens__texto {
   display: flex;
 }
@@ -245,7 +249,6 @@ main {
   align-items: flex-start;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  /* font-size: 1rem; */
 }
 
 #section__lancamento__comparar__form__submit {
@@ -328,8 +331,4 @@ main {
   transform: scale(1.1);
   cursor: pointer;
   background-color: var(--cor-azul-fraca);
-}
-
-.teste {
-  display: flex;
 }
