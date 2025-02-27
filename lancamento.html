@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lançamentos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="assets/logo-ford-256.png"
+        id="header__logo"
+        alt="Logo Principal da Ford"
+      />
+      <nav class="header__links">
+        <a class="header__links__botoes" href="index.html">Home</a>
+        <a class="header__links__botoes" href="lancamento.html">Lançamento</a>
+        <a class="header__links__botoes" href="contato.html">Contato</a>
+      </nav>
+      <div id="header__div__centralizar"></div>
+    </header>
+    <main>
+      <section class="section__lancamento__video">
+        <div class="section__lancamento__video__div">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1"
+            title="Ford Ranger 2022 | Gerações"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="section__lancamento__comparar">
+        <form action="" id="section__lancamento__comparar__form">
+          <div class="section__lancamento__comparar__produto__div">
+            <img
+              class="section__lancamento__comparar__produto__div__imagem"
+              src="assets/XL Cabine.jpg"
+              alt="Nova XL Cabine Dupla 2.2 Diesel MT 2022"
+            />
+            <div class="teste">
+              <div class="section__lancamento__comparar__div__imagens__texto">
+                <input
+                  class="section__lancamento__comparar__div__menu__checkbox"
+                  id="checkbox1"
+                  type="checkbox"
+                />
+                <label
+                  class="section__lancamento__comparar__div__menu__label"
+                  for="checkbox1"
+                >
+                  <span
+                    class="section__lancamento__comparar__div__menu__label__titulo"
+                    >XL Cabine Dupla 2.2 Diesel MT 2022</span
+                  >
+                  <br />Câmbio Manual de 6 velocidades
+                </label>
+              </div>
+              <abbr
+                class="section__lancamento__comparar__tabela"
+                title="Ford Ranger Cabine Dupla XL 2.2 Turbodiesel 4x4 (MT) 2022
+Preço: R$ 156.371"
+                ><img
+                  src="assets/info.png"
+                  alt="Ícone de informação da nova Ford Ranger Cabine Dupla XL 2.2"
+              /></abbr>
+            </div>
+          </div>
+          <div class="section__lancamento__comparar__produto__div">
+            <img
+              class="section__lancamento__comparar__produto__div__imagem"
+              src="assets/xls 2.2 diesel.jpg"
+              alt="Nova Ford Ranger Cabine Dupla XL 2.2"
+            />
+            <div class="teste">
+              <div class="section__lancamento__comparar__div__imagens__texto">
+                <input
+                  class="section__lancamento__comparar__div__menu__checkbox"
+                  id="checkbox2"
+                  type="checkbox"
+                />
+                <label
+                  class="section__lancamento__comparar__div__menu__label"
+                  for="checkbox2"
+                  ><span
+                    class="section__lancamento__comparar__div__menu__label__titulo"
+                    >XLS 2.2 Diesel 4x4 AT 2022</span
+                  ><br />
+
+                  Câmbio Automático de 6 velocidades</label
+                >
+              </div>
+              <abbr
+                class="section__lancamento__comparar__tabela"
+                title="Ford Ranger Cabine Dupla XLS 2.2 Turbodiesel 4x4 (Aut) 2022
+Preço: R$ 157.854"
+                ><img
+                  src="assets/info.png"
+                  alt="Ícone de informação da nova Ford Ranger Cabine Dupla XLS 2.2"
+              /></abbr>
+            </div>
+          </div>
+          <div class="section__lancamento__comparar__produto__div">
+            <img
+              class="section__lancamento__comparar__produto__div__imagem"
+              src="assets/storm.jpg"
+              alt="Nova Ford Ranger Cabine Dupla XLS 2.2"
+            />
+            <div class="teste">
+              <div class="section__lancamento__comparar__div__imagens__texto">
+                <input
+                  class="section__lancamento__comparar__div__menu__checkbox"
+                  id="checkbox3"
+                  type="checkbox"
+                />
+                <label
+                  class="section__lancamento__comparar__div__menu__label"
+                  for="checkbox3"
+                  ><span
+                    class="section__lancamento__comparar__div__menu__label__titulo"
+                    >Storm 3.2 Diesel 4x4 AT 2022 </span
+                  ><br />
+                  Câmbio Automático de 6 velocidades</label
+                >
+              </div>
+              <abbr
+                class="section__lancamento__comparar__tabela"
+                title="Ranger Storm 3.2 20V 4x4 CD Diesel Aut. 2022 
+Preço: R$ 173.157"
+                ><img
+                  src="assets/info.png"
+                  alt="Ícone de informação da nova Ranger Storm 3.2 20V"
+              /></abbr>
+            </div>
+          </div>
+        </form>
+      </section>
+      <button
+        id="section__lancamento__comparar__form__submit"
+        type="submit"
+        form="section__lancamento__comparar__form"
+      >
+        Comparar Carros
+      </button>
+      <aside>
+        <div id="section__lancamento__comparar__div__menu__1" popover>
+          <table
+            class="section__lancamento__comparar__div__menu__tabela"
+          ></table>
+        </div>
+        <div id="section__lancamento__comparar__div__menu__2" popover>
+          <table
+            class="section__lancamento__comparar__div__menu__tabela"
+          ></table>
+        </div>
+        <div id="section__lancamento__comparar__div__menu__3" popover>
+          <table
+            class="section__lancamento__comparar__div__menu__tabela"
+          ></table>
+        </div>
+      </aside>
+    </main>
+    <footer class="footer">
+      <nav class="footer__links">
+        <p>Redes Sociais</p>
+        <a
+          target="_blank"
+          class="footer__links__imagem"
+          href="https://www.facebook.com/FordBrasil/?locale=pt_BR"
+          ><img
+            src="assets/facebook-50.png"
+            alt="Redirecionamento para Facebook da empresa"
+        /></a>
+        <a
+          target="_blank"
+          class="footer__links__imagem"
+          href="https://www.youtube.com/fordbrasil"
+          ><img
+            src="assets/youtube-squared-50.png"
+            alt="Redirecionamento para YouTube da empresa"
+        /></a>
+        <a
+          target="_blank"
+          class="footer__links__imagem"
+          href="https://www.instagram.com/fordbrasil/?hl=en"
+          ><img
+            src="assets/instagram-logo-50.png"
+            alt="Redirecionamento para Instagram da empresa"
+        /></a>
+      </nav>
+      <img src="assets/ford-96.png" id="footer__logo" alt="Copyright Ford" />
+    </footer>
+  </body>
+</html>
