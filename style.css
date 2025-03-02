@@ -241,6 +241,7 @@ main {
 
 .section__lancamento__comparar__div__menu__tabela {
   width: 100%;
+  height: 100%;
   border-collapse: collapse;
   th,
   td {
@@ -256,6 +257,19 @@ main {
 .section__lancamento__comparar__div__menu__tabela tr:hover {
   background-color: #ddd;
   color: black;
+}
+
+.section__lancamento__comparar__div__menu__tabela th:first-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section__lancamento__comparar__div__menu__tabela__botao {
+  width: 150%;
+}
+
+.section__lancamento__comparar__div__menu__tabela__botao__titulo {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section__lancamento__comparar__div__menu {
@@ -301,7 +315,7 @@ main {
     position: absolute;
     inset: 81.2% 60%;
   }
-  #teste3 {
+  #section__lancamento__comparar__produto__div__3 {
     margin-right: auto;
     margin-left: 10%;
   }
@@ -324,13 +338,13 @@ main {
     inset: 110% 65%;
     height: 25%;
   }
-  #teste1 {
+  #section__lancamento__comparar__produto__div__1 {
     margin-right: auto;
   }
-  #teste2 {
+  #section__lancamento__comparar__produto__div__2 {
     margin-right: auto;
   }
-  #teste3 {
+  #section__lancamento__comparar__produto__div__3 {
     margin-right: auto;
     margin-left: 0%;
   }
@@ -356,13 +370,13 @@ main {
     width: 100%;
     height: 16%;
   }
-  #teste1 {
+  #section__lancamento__comparar__produto__div__1 {
     margin-right: auto;
   }
-  #teste2 {
+  #section__lancamento__comparar__produto__div__2 {
     margin-right: auto;
   }
-  #teste3 {
+  #section__lancamento__comparar__produto__div__3 {
     margin-right: auto;
   }
 }
