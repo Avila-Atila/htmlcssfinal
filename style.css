@@ -207,6 +207,7 @@ main {
 .section__lancamento__video {
   animation: transicaoPagina 1s;
   padding: 0.3% 1% 0%;
+  margin-bottom: auto;
 }
 
 .section__lancamento__video__div {
@@ -335,7 +336,6 @@ main {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  height: 40vh;
   font-family: "Poppins", sans-serif;
   margin-top: auto;
 }
@@ -343,7 +343,7 @@ main {
 #section__lancamento__comparar__form__submit {
   align-self: center;
   color: var(--cor-branca);
-  margin-top: 0.3%;
+  margin-top: auto;
   margin-bottom: 1%;
   background-color: var(--cor-azul-forte);
   border-radius: 10px;
