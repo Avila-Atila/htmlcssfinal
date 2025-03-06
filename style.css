@@ -46,6 +46,14 @@
     transform: translateY(0);
   }
 }
+@keyframes botaoPulsando {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
 
 body {
   display: flex;
@@ -197,15 +205,35 @@ main {
 /* PÁGINA DE LANÇAMENTO (lancamento.html) */
 
 .section__lancamento__video {
-  display: flex;
   animation: transicaoPagina 1s;
-  padding-top: 0.3%;
+  padding: 0.3% 1% 0%;
 }
 
 .section__lancamento__video__div {
-  width: 100%;
+  float: right;
+  width: 50vw;
+
   height: 48vh;
   animation: transicaoPagina 1s;
+}
+.section__lancamento__video__div__titulo {
+  padding-top: 3vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.section__lancamento__video__div__texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+#section__lancamento__video__div__frame {
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 639px) {
+  .section__lancamento__video__div {
+    width: 100%;
+  }
 }
 
 .section__lancamento__comparar__produto__div {
@@ -235,8 +263,9 @@ main {
 }
 
 .section__lancamento__comparar__tabela__botao:hover {
-  transform: scale(1.3);
   cursor: pointer;
+  animation: botaoPulsando 0.3s infinite;
+  animation-direction: alternate;
 }
 
 .section__lancamento__comparar__div__menu__tabela {
@@ -300,95 +329,15 @@ main {
   inset: 25% 68%;
 }
 
-@media only screen and (max-width: 959px) {
-  #section__lancamento__comparar__div__menu__1 {
-    position: absolute;
-    inset: 25% 14%;
-  }
-
-  #section__lancamento__comparar__div__menu__2 {
-    position: absolute;
-    inset: 25% 59.8%;
-  }
-
-  #section__lancamento__comparar__div__menu__3 {
-    position: absolute;
-    inset: 81.2% 60%;
-  }
-  #section__lancamento__comparar__produto__div__3 {
-    margin-right: auto;
-    margin-left: 10%;
-  }
-}
-@media only screen and (max-width: 639px) {
-  #section__lancamento__comparar__div__menu__1 {
-    position: absolute;
-    inset: 55% 65%;
-    height: 25%;
-  }
-
-  #section__lancamento__comparar__div__menu__2 {
-    position: absolute;
-    inset: 82% 65%;
-    height: 25%;
-  }
-
-  #section__lancamento__comparar__div__menu__3 {
-    position: absolute;
-    inset: 110% 65%;
-    height: 25%;
-  }
-  #section__lancamento__comparar__produto__div__1 {
-    margin-right: auto;
-  }
-  #section__lancamento__comparar__produto__div__2 {
-    margin-right: auto;
-  }
-  #section__lancamento__comparar__produto__div__3 {
-    margin-right: auto;
-    margin-left: 0%;
-  }
-}
-@media only screen and (max-width: 489px) {
-  #section__lancamento__comparar__div__menu__1 {
-    position: absolute;
-    inset: 56% 4%;
-    width: 100%;
-    height: 16%;
-  }
-
-  #section__lancamento__comparar__div__menu__2 {
-    position: absolute;
-    inset: 87% 4%;
-    width: 100%;
-    height: 16%;
-  }
-
-  #section__lancamento__comparar__div__menu__3 {
-    position: absolute;
-    inset: 115% 4%;
-    width: 100%;
-    height: 16%;
-  }
-  #section__lancamento__comparar__produto__div__1 {
-    margin-right: auto;
-  }
-  #section__lancamento__comparar__produto__div__2 {
-    margin-right: auto;
-  }
-  #section__lancamento__comparar__produto__div__3 {
-    margin-right: auto;
-  }
-}
-
 #section__lancamento__comparar__form {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
-  align-items: flex-start;
-  height: 100%;
+  align-items: center;
+  height: 40vh;
   font-family: "Poppins", sans-serif;
+  margin-top: auto;
 }
 
 #section__lancamento__comparar__form__submit {
@@ -396,15 +345,16 @@ main {
   color: var(--cor-branca);
   margin-top: 0.3%;
   margin-bottom: 1%;
-  background-color: var(--cor-azul-fraca);
+  background-color: var(--cor-azul-forte);
   border-radius: 10px;
   border-color: var(--cor-branca);
   padding: 0.4em 5%;
 }
 
 #section__lancamento__comparar__form__submit:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
+  background-color: var(--cor-azul-fraca);
 }
 
 .section__lancamento__comparar__div__menu__label__titulo {
@@ -414,25 +364,28 @@ main {
 /* PÁGINA DE CONTATO (contato.html) */
 
 .section__contato {
+  margin-top: auto;
+  margin-bottom: auto;
   align-self: center;
   display: flex;
   justify-content: center;
-  padding-top: 5vh;
   flex-wrap: wrap;
   width: 50%;
   animation: transicaoPagina 0.9s;
 }
 #section__contato__imagem {
   max-height: 184px;
-  padding-top: 50px;
+  max-width: 320px;
+  width: 70vw;
+  /* padding-top: 10%; */
 }
 
 .section__contato__form {
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin-top: 10vh;
-  gap: 15px;
+
+  gap: 3%;
   width: 64.256%;
   max-width: 320px;
   font-family: "Noto Sans", serif;
@@ -460,7 +413,7 @@ main {
 #section__contato__form__submit {
   width: 55%;
   align-self: flex-end;
-  background-color: grey;
+  background-color: var(--cor-azul-fraca);
   color: var(--cor-branca);
   border: hidden;
   border-radius: 5px;
@@ -468,7 +421,7 @@ main {
 }
 
 #section__contato__form__submit:hover {
-  transform: scale(1.1);
+  animation: botaoPulsando 1s infinite;
+  animation-direction: alternate;
   cursor: pointer;
-  background-color: var(--cor-azul-fraca);
 }
