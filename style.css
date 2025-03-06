@@ -168,6 +168,7 @@ main {
 
 #section__principal__texto {
   font-family: "Roboto", sans-serif;
+  text-align: justify;
   font-size: 1rem;
 }
 
@@ -213,7 +214,6 @@ main {
 .section__lancamento__video__div {
   float: right;
   width: 50vw;
-
   height: 48vh;
   animation: transicaoPagina 1s;
 }
@@ -225,6 +225,7 @@ main {
 .section__lancamento__video__div__texto {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  text-align: justify;
 }
 
 #section__lancamento__video__div__frame {
@@ -295,6 +296,11 @@ main {
 }
 .section__lancamento__comparar__div__menu__tabela__botao {
   width: 150%;
+  background-color: red;
+  border-radius: 4px;
+}
+.section__lancamento__comparar__div__menu__tabela__botao:hover {
+  background-color: var(--cor-azul-fraca);
 }
 
 .section__lancamento__comparar__div__menu__tabela__botao__titulo {
@@ -336,8 +342,6 @@ main {
 #section__lancamento__comparar__div__menu__2 {
   margin: auto;
 
-  /* translate: 0% 90%; */
-
   width: 100vw;
   height: 70vh;
   position: sticky;
@@ -345,8 +349,6 @@ main {
 
 #section__lancamento__comparar__div__menu__3 {
   margin: auto;
-
-  /* translate: 0% 90%; */
 
   width: 100vw;
   height: 70vh;
@@ -407,8 +409,8 @@ main {
   display: flex;
   flex: 1;
   flex-direction: column;
-
-  gap: 3%;
+  padding-bottom: 3%;
+  gap: 1rem;
   width: 64.256%;
   max-width: 320px;
   font-family: "Noto Sans", serif;
@@ -429,7 +431,9 @@ main {
     flex-wrap: wrap;
     border: grey 2px solid;
     padding: 1%;
+    height: 12vh;
     border-radius: 4px;
+    resize: none;
   }
 }
 
