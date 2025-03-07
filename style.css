@@ -74,11 +74,28 @@ body {
 
 #header__logo {
   width: 6vw;
-
-  min-width: 64px;
-  min-height: 34px;
+  min-width: 44px;
   max-height: 40px;
 }
+@media only screen and (max-width: 320px) {
+  #header__logo {
+    min-width: auto;
+    min-height: auto;
+    width: 20vw;
+  }
+  .header__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header__div__centralizar {
+    min-width: auto;
+    min-height: auto;
+    width: 20vw;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   #header__logo {
     max-height: 9vh;
@@ -97,7 +114,7 @@ body {
 .header__links__botoes {
   color: var(--cor-azul-fraca);
   font-family: "Noto Sans", serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   border: solid 2px var(--cor-branca);
 }
 
@@ -106,10 +123,9 @@ body {
 }
 
 #header__div__centralizar {
-  width: 9vw;
+  width: 6vw;
   min-width: 36px;
   visibility: hidden;
-  flex-shrink: 3;
 }
 
 main {
@@ -130,6 +146,7 @@ main {
 }
 
 .footer__links {
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
   padding-left: 1vw;
@@ -212,13 +229,20 @@ main {
 }
 
 .section__lancamento__video__div {
+  padding-top: 1.2%;
+  aspect-ratio: 16/9;
   float: right;
-  width: 50vw;
-  height: 48vh;
+  width: 45vw;
+
   animation: transicaoPagina 1s;
 }
+
+.section__lancamento__video__div__descricao {
+  width: 50%;
+  padding-top: 2%;
+}
+
 .section__lancamento__video__div__titulo {
-  padding-top: 3vh;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
@@ -230,10 +254,14 @@ main {
 
 #section__lancamento__video__div__frame {
   border-radius: 10px;
+  border: solid 2px var(--cor-azul-forte);
 }
 
 @media only screen and (max-width: 639px) {
   .section__lancamento__video__div {
+    width: 100%;
+  }
+  .section__lancamento__video__div__descricao {
     width: 100%;
   }
 }
@@ -262,6 +290,7 @@ main {
   background-color: white;
   border: none;
   align-self: flex-start;
+  margin-left: auto;
 }
 
 .section__lancamento__comparar__tabela__botao:hover {
@@ -292,15 +321,16 @@ main {
 
 .section__lancamento__comparar__div__menu__tabela th:first-child {
   display: flex;
+
   justify-content: space-evenly;
 }
 .section__lancamento__comparar__div__menu__tabela__botao {
-  width: 150%;
-  background-color: red;
+  width: 200%;
   border-radius: 4px;
 }
 .section__lancamento__comparar__div__menu__tabela__botao:hover {
-  background-color: var(--cor-azul-fraca);
+  background-color: red;
+  color: white;
 }
 
 .section__lancamento__comparar__div__menu__tabela__botao__titulo {
@@ -330,26 +360,21 @@ main {
 }
 
 #section__lancamento__comparar__div__menu__1 {
-  margin: auto;
-
-  /* translate: 0% 90%; */
-
+  margin: 11% auto 1%;
   width: 100vw;
   height: 70vh;
   position: sticky;
 }
 
 #section__lancamento__comparar__div__menu__2 {
-  margin: auto;
-
+  margin: 11% auto 1%;
   width: 100vw;
   height: 70vh;
   position: sticky;
 }
 
 #section__lancamento__comparar__div__menu__3 {
-  margin: auto;
-
+  margin: 11% auto 1%;
   width: 100vw;
   height: 70vh;
   position: sticky;
@@ -369,11 +394,11 @@ main {
   align-self: center;
   color: var(--cor-branca);
   margin-top: auto;
-  margin-bottom: 1%;
+  margin-bottom: auto;
   background-color: var(--cor-azul-forte);
   border-radius: 10px;
   border-color: var(--cor-branca);
-  padding: 0.4em 5%;
+  padding: 0.6em 4%;
 }
 
 #section__lancamento__comparar__form__submit:hover {
@@ -402,7 +427,6 @@ main {
   max-height: 184px;
   max-width: 320px;
   width: 70vw;
-  /* padding-top: 10%; */
 }
 
 .section__contato__form {
@@ -440,7 +464,7 @@ main {
 #section__contato__form__submit {
   width: 55%;
   align-self: flex-end;
-  background-color: var(--cor-azul-fraca);
+  background-color: var(--cor-azul-forte);
   color: var(--cor-branca);
   border: hidden;
   border-radius: 5px;
@@ -448,7 +472,7 @@ main {
 }
 
 #section__contato__form__submit:hover {
-  animation: botaoPulsando 1s infinite;
-  animation-direction: alternate;
+  scale: 1.1;
   cursor: pointer;
+  background-color: var(--cor-azul-fraca);
 }
