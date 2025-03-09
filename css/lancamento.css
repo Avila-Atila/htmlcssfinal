@@ -1,0 +1,94 @@
+.section__lancamento__video {
+  padding: 0.3% 1% 0%;
+  margin-bottom: auto;
+}
+
+.section__lancamento__video__div {
+  padding-top: 1.2%;
+  aspect-ratio: 16/9;
+  float: right;
+  width: 45vw;
+}
+
+.section__lancamento__video__div__descricao {
+  width: 50%;
+  padding-top: 2%;
+}
+
+.section__lancamento__video__div__titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.section__lancamento__video__div__texto {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+#section__lancamento__video__div__frame {
+  border-radius: 10px;
+  border: solid 2px var(--cor-azul-forte);
+}
+
+.section__lancamento__comparar__produto__div {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  width: 100%;
+}
+
+.section__lancamento__comparar__produto__div__info {
+  display: flex;
+}
+
+.section__lancamento__comparar__div__imagens__texto {
+  display: flex;
+}
+
+.section__lancamento__comparar__div__menu__checkbox {
+  width: 15%;
+  height: 25px;
+}
+
+#section__lancamento__comparar__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+}
+
+#section__lancamento__comparar__form__submit {
+  align-self: center;
+  color: var(--cor-branca);
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: var(--cor-azul-forte);
+  border-radius: 10px;
+  border-color: var(--cor-branca);
+  padding: 0.6em 4%;
+}
+
+#section__lancamento__comparar__form__submit:hover {
+  cursor: pointer;
+  background-color: var(--cor-azul-fraca);
+}
+
+.section__lancamento__comparar__div__menu__label__titulo {
+  color: var(--cor-azul-fraca);
+}
+
+.section__lancamento__comparar__tabela__botao {
+  background-color: white;
+  border: none;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.section__lancamento__comparar__tabela__botao:hover {
+  cursor: pointer;
+  animation: botaoPulsando 0.3s infinite;
+  animation-direction: alternate;
+}
