@@ -24,6 +24,17 @@
 }
 
 @media only screen and (max-width: 639px) {
+  #section__principal__div {
+    margin-left: 0%;
+  }
+  #section__principal__imagem__link {
+    align-self: center;
+  }
+  .section__lancamento__video {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
   .section__lancamento__video__div {
     width: 100%;
   }

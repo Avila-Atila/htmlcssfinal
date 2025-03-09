@@ -26,6 +26,7 @@
 }
 
 #section__lancamento__video__div__frame {
+  box-sizing: border-box;
   border-radius: 10px;
   border: solid 2px var(--cor-azul-forte);
 }
