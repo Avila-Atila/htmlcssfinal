@@ -19,7 +19,7 @@
 }
 
 .footer__links__imagem {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .footer__links__imagem:hover {
@@ -31,5 +31,6 @@
   margin-right: 2vw;
   align-self: center;
   width: 4vw;
+  padding: 0.5%;
   min-width: 72px;
 }
