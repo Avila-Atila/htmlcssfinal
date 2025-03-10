@@ -82,7 +82,7 @@
 }
 
 .section__lancamento__comparar__tabela__botao {
-  background-color: white;
+  background-color: var(--cor-branca);
   border: none;
   align-self: flex-start;
   margin-left: auto;

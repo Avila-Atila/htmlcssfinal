@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   border-collapse: collapse;
+
   th,
   td {
     border: 1px solid black;
@@ -55,22 +56,8 @@
   backdrop-filter: blur(8px);
 }
 
-#section__lancamento__comparar__div__menu__1 {
-  margin: 11% auto 1%;
-  width: 100vw;
-  height: 70vh;
-  position: sticky;
-}
-
-#section__lancamento__comparar__div__menu__2 {
-  margin: 11% auto 1%;
-  width: 100vw;
-  height: 70vh;
-  position: sticky;
-}
-
-#section__lancamento__comparar__div__menu__3 {
-  margin: 11% auto 1%;
+.section__lancamento__comparar__div__menu {
+  margin: 8% auto 1%;
   width: 100vw;
   height: 70vh;
   position: sticky;

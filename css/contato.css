@@ -28,6 +28,7 @@
     padding: 1%;
     border-radius: 4px;
   }
+
   select {
     flex-wrap: wrap;
     border: grey 2px solid;
@@ -42,6 +43,10 @@
     height: 12vh;
     border-radius: 4px;
     resize: none;
+  }
+  *:not(label, textarea, h3):hover {
+    background-color: var(--cor-azul-fraca);
+    color: var(--cor-branca);
   }
 }
 

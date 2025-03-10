@@ -41,4 +41,11 @@
   .section__lancamento__video__div__descricao {
     width: 100%;
   }
+
+  .section__lancamento__comparar__div__menu {
+    position: relative !important;
+    margin: 90% auto 1% !important;
+    max-height: 700px;
+    min-height: 600px;
+  }
 }
