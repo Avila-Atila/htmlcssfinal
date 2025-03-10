@@ -15,14 +15,15 @@
   padding-left: 1vw;
   flex: 1;
   flex-wrap: wrap;
+  gap: 1%;
 }
 
 .footer__links__imagem {
-  transform: scale(0.7);
+  width: 1.5rem;
 }
 
 .footer__links__imagem:hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 #footer__logo {

@@ -11,6 +11,7 @@
   --cor-azul-fraca: #1351d8;
   --cor-azul-forte: #1b357e;
   --cor-branca: white;
+  --teste: calc(100%+5000px);
 }
 
 body {
