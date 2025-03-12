@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contate-nos!</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/animacoes.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/contato.css" />
     <link rel="stylesheet" href="./css/responsividade.css" />
   </head>
@@ -33,12 +31,21 @@
           alt="Nova Ford Ranger Cabine Dupla XLS 2.2"
         />
 
-        <form action="" class="section__contato__form">
+        <form
+          action="index.html"
+          method="get"
+          class="section__contato__form"
+          name="formulario__de__contato"
+        >
           <label for="section__contato__form"><h3>Sobre Você</h3></label>
-          <input required type="text" placeholder="NOME*" />
-          <input required type="email" placeholder="E-MAIL*" />
-          <input required type="tel" placeholder="TELEFONE*" />
-          <select name="" id="" required>
+          <input required type="text" placeholder="NOME*" name="nome" />
+          <input required type="email" placeholder="E-MAIL*" name="email" />
+          <input required type="tel" placeholder="TELEFONE*" name="telefone" />
+          <select
+            name="tipo__contato"
+            id="section__contato__form__select"
+            required
+          >
             <option value="">Tipo de Contato</option>
             <option value="elogiar">Elogio</option>
             <option value="reclamar">Reclamação</option>

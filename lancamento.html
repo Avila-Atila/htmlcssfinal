@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lançamentos</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/animacoes.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/lancamento.css" />
     <link rel="stylesheet" href="./css/table.css" />
     <link rel="stylesheet" href="./css/responsividade.css" />
@@ -60,7 +58,12 @@
         </div>
       </section>
       <section class="section__lancamento__comparar">
-        <form action="" id="section__lancamento__comparar__form">
+        <form
+          action="lancamento.html"
+          id="section__lancamento__comparar__form"
+          method="get"
+          name="seletor__de__modelos"
+        >
           <div
             id="section__lancamento__comparar__produto__div__1"
             class="section__lancamento__comparar__produto__div"
@@ -76,6 +79,8 @@
                   class="section__lancamento__comparar__div__menu__checkbox"
                   id="checkbox1"
                   type="checkbox"
+                  name="checkbox__XL"
+                  value="XL"
                 />
 
                 <label
@@ -118,6 +123,8 @@
                   class="section__lancamento__comparar__div__menu__checkbox"
                   id="checkbox2"
                   type="checkbox"
+                  name="checkbox__XLS"
+                  value="XLS"
                 />
                 <label
                   class="section__lancamento__comparar__div__menu__label"
@@ -159,6 +166,8 @@
                   class="section__lancamento__comparar__div__menu__checkbox"
                   id="checkbox3"
                   type="checkbox"
+                  name="checkbox__storm"
+                  value="STORM"
                 />
                 <label
                   class="section__lancamento__comparar__div__menu__label"
